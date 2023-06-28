@@ -72,7 +72,7 @@ Give it a few seconds! You should hear a piano playing. Ignore the warnings for 
   pip3 install abjad
 ```
 
-3. Make sure everything is installed corrected by creating a python script called `test2.py` and execute the following code:
+5. Make sure everything is installed corrected by creating a python script called `test2.py` and execute the following code:
 
 ```python
     from scamp import test_run
