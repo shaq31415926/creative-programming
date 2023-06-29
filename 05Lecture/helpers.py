@@ -37,3 +37,8 @@ def draw_converted_image(image, ascii_chars, font_size, surface):
             char_index = char_indices[x, y]
             if char_index:
                 surface.blit(rendered_ascii_chars[char_index], (x, y))
+
+def save_image(surface, file_path):
+    pygame_image = pg.surfarray.array3d(surface)
+    cv2_img = cv2.transpose(pygame_image)
+    cv2.imwrite(file_path, cv2_img)
