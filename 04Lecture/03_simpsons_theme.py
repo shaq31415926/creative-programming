@@ -4,7 +4,7 @@ from scamp import *
 s = Session()
 
 # set the tempo
-s.tempo = 120
+# s.tempo = 120
 
 # new part in the session which plays the clarinet
 clarinet = s.new_part("clarinet")
@@ -22,14 +22,15 @@ s.stop_transcribing().to_score().show()
 
 print("----")
 # we can also map a specific time duration for every pitch
+pitch = [60, 64, 66, 69, 67, 64, 60, 57, 54, 54, 55]
 durs_list = [1.5, 1.0, 1.0, 0.5, 1.5, 1.0, 1.0, 0.5, 0.5, 0.5, 0.5]
 
 
 s.tempo = 120
 s.start_transcribing()
-for pitch, duration in zip(pitch, durs_list):
-     print(pitch, duration)
-     clarinet.play_note(pitch, 0.8, duration)
+for p, duration in zip(pitch, durs_list):
+     print(p, duration)
+     clarinet.play_note(p, 0.8, duration)
 s.stop_transcribing().to_score().show()
 
 
@@ -37,9 +38,9 @@ s.stop_transcribing().to_score().show()
 # check out the documentation here: http://scamp.marcevanstein.com/narrative/note_properties.html#the-note-properties-argument
 
 s.start_transcribing()
-for pitch, duration in zip(pitch, durs_list):
-     print(pitch, duration)
-     clarinet.play_note(pitch, 0.8, duration, "#")
+for p, d in zip(pitch, durs_list):
+     print(p, duration)
+     clarinet.play_note(p, 0.8, duration, "#")
 s.stop_transcribing().to_score().show()
 
 # ANY IDEAS HOW TO COMPLETE THIS?????
