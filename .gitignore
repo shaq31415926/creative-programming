@@ -1,0 +1,10 @@
+dev/
+vsketch/
+ai_frankfurt_workshop/images/
+ai_frankfurt_workshop/music/
+ai_frankfurt_workshop/video/
+.DS_Store
+__pycache__/
+.idea/
+.ipynb_checkpoints/
+
