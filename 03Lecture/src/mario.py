@@ -17,7 +17,7 @@ def create_square(t, side_length, colour):
 
 # create 5 small squares on the first line
 num_squares = 5
-side_length = 10
+side_length = 15
 colour = "red"
 
 for num in range(num_squares):
@@ -203,5 +203,43 @@ for num in range(num_squares):
 num_squares = 2
 for num in range(num_squares):
     create_square(t, side_length, colour="#ffd987")
+
+# new row
+num_squares = 10
+new_row(t, side_length, num_squares, shift=0)
+num_squares = 3
+for num in range(num_squares):
+    create_square(t, side_length, colour="blue")
+num_squares = 2
+for num in range(num_squares):
+    create_square(t, side_length, colour="white")
+num_squares = 3
+for num in range(num_squares):
+    create_square(t, side_length, colour="blue")
+# new row
+num_squares = 8
+new_row(t, side_length, num_squares, shift=0)
+num_squares = 3
+for num in range(num_squares):
+    create_square(t, side_length, colour="brown")
+num_squares = 2
+for num in range(num_squares):
+    create_square(t, side_length, colour="white")
+num_squares = 3
+for num in range(num_squares):
+    create_square(t, side_length, colour="brown")
+
+# LAST ROW
+num_squares = 9
+new_row(t, side_length, num_squares, shift=0)
+num_squares = 4
+for num in range(num_squares):
+    create_square(t, side_length, colour="brown")
+num_squares = 2
+for num in range(num_squares):
+    create_square(t, side_length, colour="white")
+num_squares = 4
+for num in range(num_squares):
+    create_square(t, side_length, colour="brown")
 
 done()
