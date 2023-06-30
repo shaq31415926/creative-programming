@@ -19,7 +19,7 @@ if not os.path.exists(directory):
 
 # specify some initial parameters
 RENDER_SEED = 4
-ITERATIONS = 200
+ITERATIONS = 150
 RESOLUTION = 1024
 Z_DIMS = 6
 step_size = 2.0 / ITERATIONS

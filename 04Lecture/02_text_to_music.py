@@ -1,5 +1,4 @@
 # Reference: https://www.youtube.com/watch?v=9Lk4gBBWMqw
-
 from scamp import *
 
 # create a new session with drums

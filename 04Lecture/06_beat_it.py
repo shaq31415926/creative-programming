@@ -1,5 +1,4 @@
 # Reference: https://www.youtube.com/watch?v=WhNLNvugNy0
-
 from scamp import *
 
 s = Session()
