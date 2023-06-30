@@ -26,6 +26,10 @@ for filename in sorted(glob.glob(f'{directory}/*.png'), key=get_key):
     size = (width, height)
     img_array.append(img)
 
+# create the video directory if the directory does not exist
+if not os.path.exists("video"):
+    os.makedirs("video")
+
 out = cv2.VideoWriter('video/example.mp4', cv2.VideoWriter_fourcc(*'mp4v'), 15, size)
 
 for i in range(len(img_array)):
