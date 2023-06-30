@@ -21,13 +21,13 @@ def resize_cv2_image(image):
     cv2.imshow("resized cv image", resized_image)
 
 
-def draw_converted_image(image, ascii_chars, font_size, surface):
+def draw_converted_image(image, ascii_chars, font_style, font_size, surface):
     # the image has to be in black and white for this to work
     height = image.shape[1]
     width = image.shape[0]
 
     ascii_coeff = 255 // (len(ascii_chars) - 1)
-    font = pg.font.SysFont("Courier", font_size, bold=True)
+    font = pg.font.SysFont(font_style, font_size, bold=True)
     char_step = int(font_size * 0.6)
     rendered_ascii_chars = [font.render(char, False, 'white') for char in ascii_chars]
 
