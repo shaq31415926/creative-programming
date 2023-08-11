@@ -1,8 +1,10 @@
 dev/
 vsketch/
-ai_frankfurt_workshop/images/
-ai_frankfurt_workshop/music/
-ai_frankfurt_workshop/video/
+generative_art_workshop/images/
+generative_art_workshop/music/
+generative_art_workshop/video/
+generative_art_workshop/backup/
+generative_art_workshop/art/
 .DS_Store
 __pycache__/
 .idea/
