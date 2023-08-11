@@ -16,14 +16,12 @@ else:
 if not os.path.exists(directory):
     os.makedirs(directory)
 
-
 # specify some initial parameters
 RENDER_SEED = 4
 ITERATIONS = 150
 RESOLUTION = 1024
 Z_DIMS = 6
 step_size = 2.0 / ITERATIONS
-
 
 # each iteration we will adjust the z value
 # which I am assuming represents the values from the neurons of the output layer.
@@ -32,7 +30,6 @@ z = [-1.0] * Z_DIMS
 for x in range(ITERATIONS):
     # this uses the neural art render function which can be found here:
     # https://github.com/dstein64/neuralart/blob/master/neuralart/neuralart.py
-
 
     result = neuralart.render(
         xres=RESOLUTION,
